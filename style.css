@@ -74,6 +74,9 @@ a {
   background-color: #0c831f;
   color: white;
 }
+.nav_search_box {
+  outline: none;
+}
 
 /* Hero Section */
 
@@ -91,11 +94,9 @@ a {
   align-items: flex-start;
   overflow: scroll;
 }
-
 .highlight_box {
   margin-right: 10px;
 }
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -105,12 +106,15 @@ a {
 #all_categories {
   margin-top: 1%;
 }
-
 .category_row {
   padding-inline: 3%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+}
+.category_item > img:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
 }
 
 /* Product Cards */
@@ -118,30 +122,25 @@ a {
 #product_cards {
   margin-inline: 3%;
 }
-
 .card_container {
   padding: 1% 1%;
 }
-
 .card_header {
   width: 100%;
   font-size: 22px;
 }
-
 .see_all {
   padding-inline: 1%;
   font-size: 20px;
   float: inline-end;
   color: #1b8651;
 }
-
 .card_holder {
   display: flex;
   flex-direction: row;
   padding: 1% 0%;
   overflow: scroll;
 }
-
 .mini_card {
   text-align: center;
   width: auto;
@@ -153,11 +152,9 @@ a {
   margin-inline: 8px;
   box-shadow: 0px 0px 3px #9799975d;
 }
-
 .mini_card:hover {
   box-shadow: 0px 0px 10px #8e8f8e5d;
 }
-
 .mini_card_footer {
   display: flex;
   flex-direction: row;
@@ -206,6 +203,7 @@ a {
 }
 
 /* Footer */
+
 footer {
   padding: 70px 4% 10px 4%;
 }
@@ -216,7 +214,6 @@ footer {
   display: flex;
   flex-direction: row;
 }
-
 .footer_top_first {
   display: flex;
   flex-direction: column;
@@ -254,25 +251,22 @@ footer {
   width: 35%;
   font-size: 11px;
 }
-
 .footer_mid_downloads {
   font-size: 13px;
   font-weight: 700;
   padding-right: 3%;
   text-align: left;
 }
-
 .footer_mid_icons {
-  font-size: 25px;
+  font-size: 18px;
   color: white;
   text-align: left;
   margin-left: 0px;
 }
-
 .footer_socail_icon {
+  padding-top: 2%;
   background-color: black;
 }
-
 .footer_end {
   padding-left: 5px;
   color: #898888;
